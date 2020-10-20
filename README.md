@@ -1,6 +1,6 @@
 # Kubernetes API Tester
 
-This will parse out the kube masters IPs from Vaqureo config and then test each kube-apiserver process individually 
+This will parse out the kube masters IPs from Vaqureo config and then test each masters kube-apiserver API individually 
 
 This script tries to return pods because just returning nodes doesn't account for the API's escalation failures which we have seen issues with both in the wild with kube-apiserver. 
 
