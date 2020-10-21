@@ -4,7 +4,7 @@ This will parse out the kube masters IPs from Vaqureo config and then test each 
 
 This script tries to return pods because just returning nodes doesn't account for the API's escalation failures which we have seen issues with both in the wild with kube-apiserver. 
 
-Checking pods covers the two different ways I have seen the API fail.
+Checking pods with 'get pods' covers the two different ways I have seen the API fail. Getting pods resources will test the auth function of the service as well as timeouts / etc.
 
 
 ### How to run
