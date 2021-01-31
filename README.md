@@ -1,4 +1,4 @@
-# Kubernetes API Tester
+# Kubernetes API Tester For Intermittent Kubectl Failures.
 
 This will parse out the kube masters IPs from Vaqureo config and then test each masters kube-apiserver API individually 
 
@@ -8,6 +8,8 @@ Checking pods with 'get pods' covers the two different ways I have seen the API 
 
 
 ### How to run
+
+This script is for testing the Master APIserver **behind** the load balancer in a HA masters Kubernetes cluster
 
 ***./api_tester.sh ~/vaquero-inventory/sites//site-file/hosts-coreos-denver-example.yml***
 
