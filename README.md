@@ -8,7 +8,7 @@
 
 ## Tests Timeouts and escalation Failures
 
-This script tries to return pods because just returning nodes doesn't account for the API's escalation failures. We have seen both issues in the wild with kube-apiserver. 
+This script tries to return pods with 'kubectl get pods' because just returning nodes with 'kubectl get nodes' doesn't account for the API's escalation failures. We have seen both issues in the wild with kube-apiserver in earlier versions of Kubernetes. 
 
 Checking pods with 'get pods' covers the two different ways I have seen the API fail. Getting pods resources will test the auth function of the service as well as timeouts / etc.
 
