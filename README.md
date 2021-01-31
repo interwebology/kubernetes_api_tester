@@ -1,11 +1,16 @@
-# Kubernetes API Tester For Intermittent Kubectl Failures.
+# Kubernetes API Tester For Intermittent Kubectl Failures on HA Master Cluster.
 
-This will parse out the kube masters IPs from Vaqureo config and then test each masters kube-apiserver API individually 
+## Two different scripts, two different ways to run.
 
-This script tries to return pods because just returning nodes doesn't account for the API's escalation failures which we have seen issues with both in the wild with kube-apiserver. 
+1. This will parse out the kube masters IPs from Vaqureo config and then test each masters kube-apiserver API individually 
+**or**
+2. This will parse out masters from a file you feed the script to test.
+
+## Tests Timeouts and escalation Failures
+
+This script tries to return pods because just returning nodes doesn't account for the API's escalation failures. We have seen both issues in the wild with kube-apiserver. 
 
 Checking pods with 'get pods' covers the two different ways I have seen the API fail. Getting pods resources will test the auth function of the service as well as timeouts / etc.
-
 
 ### How to run
 
