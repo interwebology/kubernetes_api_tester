@@ -6,7 +6,7 @@
 **or**
 2. This will parse out masters from a file you feed the script to test.
 
-## Tests Timeouts and escalation Failures
+## Tests Timeouts and Escalation Failures
 
 This script tries to return pods with 'kubectl get pods' because just returning nodes with 'kubectl get nodes' doesn't account for the API's escalation failures. We have seen both issues in the wild with kube-apiserver in earlier versions of Kubernetes. 
 
