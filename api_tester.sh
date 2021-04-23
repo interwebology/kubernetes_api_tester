@@ -5,11 +5,9 @@ echo "You wanna search for masters in host file  $1"
 else
 echo "use: ./api_tester.sh ~/vaquero/site-file/hosts-coreos-nashville-example.yml"
 echo "------------------------------------------------------------------------------------------"
-echo "This will parse out the masters IPs and then test each master IP kube-apiserver process individually " 
-echo "This is testing behind the VIP. VIP issues and then try to focus in on ha-proxy service logs" 
-echo "If the output gets stuck on one node and then times out then jump into that machine and run 'sudo systemctl restart kube-apiserver'"
-echo "Keep in mind a 'get nodes' could pass but 'get pods' could fail on same servers based on escalation failure. Both can be solved with reboot"
-echo "the 'get pods' command will catch all failures."
+echo "This will parse out the masters IPs from a Vaquero yaml file and test each master's IP kube-apiserver process individually " 
+echo "If the output gets stuck on one node and times out or another error then jump into that machine and run 'sudo systemctl restart kube-apiserver'"
+echo "After you research phase"
 echo "------------------------------------------------------------------------------------------"
 
 fi
