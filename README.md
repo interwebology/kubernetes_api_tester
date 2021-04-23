@@ -20,7 +20,7 @@ This script is for testing the Master APIserver **behind** the load balancer in 
 
 If the output gets stuck on one node and then times out then that nodes kube-apiserver process is causing issues. jump into that machine and run 
 
-***'sudo systemctl restart kube-apiserver'***
+***'sudo systemctl restart kube-apiserver'*** though you really should investigate the cause before restarting. 
 
 ***Output (Timeout Error Could Vary)***
 ```>$./api_tester.sh ~/vaquero-inventory/sites//smf-ingest/hosts-coreos-smf.yml
