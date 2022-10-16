@@ -1,6 +1,6 @@
 # Kubernetes API Tester For Intermittent Kubectl Failures on HA Master Cluster.
 
-** A Repo to support a article I wrote on my website about 'Troubleshooting intermittent kubectl errors in Kubernetes cluster with highly available masters'** 
+***A Repo to support a article I wrote on my website about 'Troubleshooting intermittent kubectl errors in Kubernetes cluster with highly available masters'***
 
 ## Two different scripts, two different ways to run.
 
